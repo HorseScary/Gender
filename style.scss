@@ -1,0 +1,68 @@
+$blue: #5fb2ff;
+$pink: #ff8df5;
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    height: 20vh;
+    animation: 10s linear infinite cycle;
+}
+
+@keyframes cycle {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+
+    50% {
+        opacity: .5;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#gender_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.stripe {
+    height: 20vh;
+}
+
+#blue {
+    background-color: $blue;
+}
+
+#pink {
+    background-color: $pink;
+}
+
+#white {
+    background-color: white;
+}
