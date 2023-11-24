@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rat</title>
+
+    <style>
+        #rat-container {
+            min-height: 100%;
+            min-width: 100%;
+
+            background-image: url(https://understandingpetfancyrats.com/wp-content/uploads/2015/08/Rat_whiskers_21-1024x879.jpg);
+            background-size: 100% 100%;
+        }
+
+        #rat-container #rat1 {
+            height: 200vw;
+            mix-blend-mode: multiply;
+
+            position: fixed;
+            top: -50vh;
+            left: -50vw;
+
+            animation-name: site-background;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        #rat-container #rat2 {
+            height: 200vw;
+            mix-blend-mode: difference;
+
+            position: fixed;
+            top: -50vh;
+            left: -50vw;
+
+            animation-name: site-background;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+        }
+
+        @keyframes site-background {
+            from {
+                transform: rotate(0deg);
+            }
+
+            50% {
+
+                transform: rotate(180deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="rat-container">
+
+        <img src="https://understandingpetfancyrats.com/wp-content/uploads/2015/08/Rat_whiskers_21-1024x879.jpg" alt=""
+            id="rat1">
+        <img src="https://understandingpetfancyrats.com/wp-content/uploads/2015/08/Rat_whiskers_21-1024x879.jpg" alt=""
+            id="rat2">
+    </div>
+</body>
+
+</html>
